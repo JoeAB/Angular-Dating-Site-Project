@@ -1,0 +1,26 @@
+body{
+	margin: 1%;
+	text-align:center;
+	background-color: #240339;
+	color: black;
+
+}
+
+.content-box{
+	background-color: #744B8E;
+
+	border: solid black 2px;
+}
+
+.side-button{
+
+}
+.side-button:hover{
+
+	background-color: #9675AB;
+
+} 
+
+.holder{
+	background-color: #3B1255;
+	}

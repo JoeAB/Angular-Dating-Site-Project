@@ -1,0 +1,22 @@
+<!doctype html>
+
+<html lang="en" ng-app="main">
+
+<body>
+	<div ng-controller="register" class="content-box">
+		<h2>{{title}}</h2>
+		  <form >
+  			<p>
+  				Name:<br />
+  				<input type="text" ng-model="name" name="name" id="first_name"/><br />
+				Email:<br />
+				<input type="text"  ng-model="email" name="email" id="email" /><br />
+				Username:<br />
+				<input type="text"  ng-model="username" name="username" id="username" /><br />
+				<br /> 
+				<input type="submit" value="Submit" name="submit" id="submit" />
+  			</p>
+  		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="en" ng-app="main">
+<head>
+  <meta charset="utf-8">
+  <title>BetterCupid</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-route.min.js"></script>
+  <script src="js/main.js"></script>
+
+</head>
+
+<body>
+  	<div class="col-md-4">
+    	<div class="content-box" ng-controller="side">
+    		<h3>BetterCupid</h3>
+        	<hr />
+        	<div ng-repeat="button in buttons">
+        		<div class="side-button" ng-if="button.isVisible">
+        			<a href="#/{{button.link}}">
+        			{{button.label}}
+        			</a>
+        		</div>
+        	</div>
+        	
+       <!-- 	<a href="#/login">
+        		<div class="side-button">
+        			Login
+        		</div>
+        	</a>
+        -->
+        </div>
+
+	</div>
+	
+  	<div ng-view class="col-md-8">
+
+  	</div>
+
+</body>
+</html>

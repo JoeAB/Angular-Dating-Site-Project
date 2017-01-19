@@ -1,0 +1,19 @@
+<!doctype html>
+
+<html lang="en" ng-app="main">
+<body>
+<div class="content-box">
+	<div ng-controller="login" >
+		<h2>{{title}}</h2>
+		  <form >
+				<p>Username <input type="text" ng-model="username" name="username" /> &nbsp;
+				   Password <input type="password" ng-model="password" name="username" /><br /><br />
+				   <input type="submit" value="Submit" />
+				   <br />
+				   Need an account? <a href="#/register">Register here</a>
+				</p>
+  		</form>
+	</div>
+</div>
+</body>
+</html>
